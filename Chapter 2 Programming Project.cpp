@@ -1,20 +1,36 @@
-// Chapter 2 Programming Project.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+//Terrence Williamson
+//09.18.24
+//Chapter 2 Programming Project
+//Program-1-Ocean-Levels
+
+//Assume the ocean’s level is currently rising at about 1.5 millimeters per year
+//need current ocean level
+//program will display changes from current level to:
+//5, 7, and 10 years from now based upon current level
 
 #include <iostream>
+using namespace std;
+//initialize variables for current sea level, rate which it rises,
+// and how many mm it will have rised in the given time spans
+float clevel = 104.7;
+float rise_rate = 1.5;
+float x5 = rise_rate * 5;
+float x7 = rise_rate * 7;
+float x10 = rise_rate * 10;
+
+
 
 int main()
-{
-    std::cout << "Hello World!\n";
+{//displays data on screen in bulleted list giving x variables for years 5, 7, 10
+    cout << "We know that the ocean's current level is ";
+    cout << clevel;
+    cout << " millimeters. In the future, the level will rise an additional:\n* ";
+    cout << x5;
+    cout << "mm in 5 years.\n* ";
+    cout << x7;
+    cout << "mm in 7 years.\n* ";
+    cout << x10;
+    cout << "mm in 10 years.\n\n";
+    return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+ 
