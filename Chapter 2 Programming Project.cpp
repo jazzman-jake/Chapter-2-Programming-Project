@@ -1,20 +1,23 @@
-// Chapter 2 Programming Project.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+//Terrence Williamson
+//09.19.24
+//Chapter 2 Programming Project
+//Distance-MPG
 
 #include <iostream>
+using namespace std;
+//initialize variables for max gallons of gas in car, then MPG of driving-
+//-in town and on highways
+int max_tank = 20;
+float MPGtown = 23.5, MPGhwy = 28.9;
 
 int main()
-{
-    std::cout << "Hello World!\n";
+{//display calculations on screen to show distance tarveled in diff scenarios
+    cout << "A car's tank holds ";
+    cout << max_tank;
+    cout << " gallons. The mileage lets it travel, on one full tank:\n* ";
+    cout << MPGtown * max_tank;
+    cout << " miles in towns:\n* ";
+    cout << MPGhwy * max_tank;
+    cout << " miles on the highway\n\n";
+    return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
